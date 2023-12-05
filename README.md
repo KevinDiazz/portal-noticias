@@ -8,6 +8,7 @@ Este proyecto es una aplicación web de noticias desarrollada utilizando React, 
 - Uso de hooks personalizados para una gestión eficiente del estado y lógica de la aplicación.
 - Implementación de componentes responsivos con Bootstrap.
 - Estilizado con Sass para una experiencia visual mejorada.
+- -testing con Jest y React library testing 
 
 ## Tecnologías Utilizadas
 
@@ -16,6 +17,7 @@ Este proyecto es una aplicación web de noticias desarrollada utilizando React, 
 - **Hooks Personalizados:** Implementación de hooks personalizados para una lógica más modular.
 - **Bootstrap:** Framework de diseño que facilita la creación de interfaces responsivas.
 - **Sass:** Preprocesador CSS que mejora la capacidad de estilizado.
+- -**Jest** Marco de testing.
 
 ## Instalación
 
