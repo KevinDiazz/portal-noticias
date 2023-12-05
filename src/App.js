@@ -1,24 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import Content from "./componentes/content";
+import Nav from "./componentes/nav";
+import useFecthDatos from "./componentes/fetchData";
+import ButtonUp from "./componentes/buttonUp";
 function App() {
+ const{datos,tema,setDatos,setTema,getInfo} = useFecthDatos()
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Nav
+        getDatos={getInfo}
+        updateDatos={setDatos}
+        updateTema={setTema}
+      ></Nav>
+      <Content datos={datos} tema={tema}></Content>
+      <ButtonUp></ButtonUp>
+    </>
   );
 }
 
